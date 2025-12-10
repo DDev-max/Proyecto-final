@@ -8,7 +8,7 @@ from basedatos.conexion_sql import conexion_SQL
 # Clase para realizar EDA
 class ProcesadorEDA:
 
-    def __init__(self, servidor: str):
+    def __init__(self, servidor):
         self.__servidor = None
         self.__conexion = None
         self.__df = None
