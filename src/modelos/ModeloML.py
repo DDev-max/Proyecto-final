@@ -9,6 +9,23 @@ class ModeloML:
         self.__X  = X
         self.__y = y
 
+    
+    @property
+    def X(self):
+        return self.__X
+
+    @X.setter
+    def df(self, nuevo_x):
+        self.__X = nuevo_x
+
+    @property
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def df(self, nuevo_y):
+        self.__y = nuevo_y
+
     def ver_outliers(self):
         plt.boxplot(self.__y)
         plt.title(f"Boxplot {self.__y.name}")
